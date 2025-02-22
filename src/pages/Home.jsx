@@ -1,4 +1,5 @@
 import "../styles/styles.css";
+import { Link } from "react-router-dom";
 import phoneImg from "../assets/home-img.png";
 import arrow from "../assets/arrow.png";
 import phoneVisaImg from "../assets/about-img.png";
@@ -17,12 +18,12 @@ const Home = () => {
       </div>
       <h1 className="home-heading">MoyoLedgers - your AI Accounting Assistant</h1>
       <div className="hero-btns">
-          <a href="/terms-of-use">
-            <button className="terms-btn">Terms Of Use</button>
-          </a>
-          <a href="/privacy-policy">
-            <button className="policy-btn">Privacy Policy <i class="ri-arrow-right-s-line"></i></button>
-          </a>
+      <Link to="/terms-of-use">
+       <button className="terms-btn">Terms Of Use</button>
+      </Link>
+      <Link to="/privacy-policy">
+       <button className="policy-btn">Privacy Policy <i class="ri-arrow-right-s-line"></i></button>
+      </Link>
       </div>
       <div className="welcome-image">
         <img src={phoneImg} alt="Logo" className="home-img" />
@@ -111,7 +112,7 @@ const Home = () => {
              </p>
 
             <div className="readmore-btn">
-              <a href="#">
+              <a href="#read-more">
                <button className="policy-btn">Raad More <i class="ri-arrow-right-s-line"></i></button>
              </a>
             </div>
@@ -186,7 +187,7 @@ const Home = () => {
        </div>
       </div>
 
-      <div className="section5">
+      <div className="section5" id="read-more">
         <div className="section-wrapper">
           <div className="contents-container">
             <div className="left-div">

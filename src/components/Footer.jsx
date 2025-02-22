@@ -20,8 +20,8 @@ const Footer = () => {
         <div className="copyright-text">
           <p>© {new Date().getFullYear()} MoyoLedgers. All rights reserved.</p>
           <div className="privacy-terms">
-            <p><a href="/privacy-policy">Privacy Policy</a></p>
-            <p><a href="/terms-of-use">Terms of Use</a></p>
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/terms-of-use">Terms of Use</Link>
           </div>
         </div>
       </div>
